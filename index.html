@@ -28,7 +28,8 @@
   <h1>IP Logs</h1>
   <pre id="logs"></pre>
   <script>
-    const ws = new WebSocket('wss://your-logger-server.netlify.app');
+    // Replace with your WebSocket URL
+    const ws = new WebSocket('wss://wondrous-tarsier-788bb4.netlify.app');
 
     ws.onmessage = (event) => {
       const log = JSON.parse(event.data);
